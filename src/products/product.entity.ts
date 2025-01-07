@@ -11,10 +11,10 @@ export class Product {
     @Column()
     price: number;
 
-    @Column()
+    @Column({nullable:true})
     description: string;
 
-    @Column()
+    @Column({nullable:true})
     category: string;
 
     @Column({ default: true })
